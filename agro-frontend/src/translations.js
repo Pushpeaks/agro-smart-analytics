@@ -1,0 +1,140 @@
+export const translations = {
+    en: {
+        title: "AgroSmart",
+        inputTab: "Input Data",
+        analyticsTab: "Analytics",
+        formHeader: "Farm Analysis Input",
+        formSubheader: "Provide your farm parameters for accurate prediction",
+        generateBtn: "Generate Advanced Report",
+        analyzingBtn: "Analyzing...",
+        footer: "© 2026 AgroSmart AI • Production Grade Insights",
+        dashboardHeader: "Analysis Dashboard",
+        yield: "Predicted Yield",
+        profit: "Estimated Profit",
+        risk: "Risk Assessment",
+        marketPrice: "Market Price",
+        comparisonChart: "Yield & Profit Comparison",
+        priceTrendChart: "Market Price Trend",
+        profitBreakdown: "Profit Breakdown",
+        costVsProfit: "Cost vs Profit",
+        costLabel: "Input Cost",
+        profitLabel: "Net Profit",
+        bestCrop: "Recommended Crop",
+        crops: {
+            Rice: "Rice",
+            Wheat: "Wheat",
+            Cotton: "Cotton",
+            Maize: "Maize",
+            Sugarcane: "Sugarcane"
+        },
+        langToggle: "हिन्दी",
+        units: {
+            area: "Acres",
+            rainfall: "mm",
+            temperature: "°C",
+            fertilizer_cost: "₹",
+            previous_yield: "Tons",
+            previous_profit: "₹",
+            current_cost: "₹",
+            fertilizer: "kg",
+            irrigation: "Liters",
+            month: "Month (1-12)",
+            last_price: "₹/Ton",
+            demand_index: "Score (1-10)"
+        },
+        fields: {
+            area: "Farm Area",
+            rainfall: "Rainfall",
+            temperature: "Temperature",
+            fertilizer_cost: "Fertilizer Cost",
+            previous_yield: "Previous Yield",
+            previous_profit: "Previous Profit",
+            current_cost: "Current Cost",
+            fertilizer: "Fertilizer Qty",
+            irrigation: "Irrigation Qty",
+            month: "Sowing Month",
+            last_price: "Last Market Price",
+            demand_index: "Demand Index"
+        },
+        results: {
+            optimal: "Optimal",
+            highRisk: "High Risk",
+            stabilityScore: "Stability Score",
+            basedOnParams: "Based on parameters",
+            previous: "Previous",
+            predicted: "Predicted"
+        },
+        error: {
+            backend: "Backend not reachable!"
+        }
+    },
+    hi: {
+        title: "AgroSmart",
+        inputTab: "डेटा भरें",
+        analyticsTab: "विश्लेषण",
+        formHeader: "कृषि विश्लेषण इनपुट",
+        formSubheader: "सटीक भविष्यवाणी के लिए अपने खेत के पैरामीटर प्रदान करें",
+        generateBtn: "उन्नत रिपोर्ट तैयार करें",
+        analyzingBtn: "विश्लेषण हो रहा है...",
+        footer: "© 2026 AgroSmart AI • आधुनिक कृषि अंतर्दृष्टि",
+        dashboardHeader: "विश्लेषण डैशबोर्ड",
+        yield: "अनुमानित उपज",
+        profit: "अनुमानित लाभ",
+        risk: "जोखिम मूल्यांकन",
+        marketPrice: "बाजार मूल्य",
+        comparisonChart: "उपज और लाभ की तुलना",
+        priceTrendChart: "बाजार मूल्य का रुझान",
+        profitBreakdown: "लाभ का विवरण",
+        costVsProfit: "लागत बनाम लाभ",
+        costLabel: "लागत",
+        profitLabel: "शुद्ध लाभ",
+        bestCrop: "सुझाई गई फसल",
+        crops: {
+            Rice: "चावल",
+            Wheat: "गेहूं",
+            Cotton: "कपास",
+            Maize: "मक्का",
+            Sugarcane: "गन्ना"
+        },
+        langToggle: "English",
+        units: {
+            area: "एकड़",
+            rainfall: "मिमी",
+            temperature: "°C",
+            fertilizer_cost: "₹",
+            previous_yield: "टन",
+            previous_profit: "₹",
+            current_cost: "₹",
+            fertilizer: "किलोग्राम",
+            irrigation: "लीटर",
+            month: "महीना (1-12)",
+            last_price: "₹/टन",
+            demand_index: "स्कोर (1-10)"
+        },
+        fields: {
+            area: "खेत का क्षेत्रफल",
+            rainfall: "वर्षा",
+            temperature: "तापमान",
+            fertilizer_cost: "उर्वरक लागत",
+            previous_yield: "पिछली उपज",
+            previous_profit: "पिछला लाभ",
+            current_cost: "वर्तमान लागत",
+            fertilizer: "उर्वरक मात्रा",
+            irrigation: "सिंचाई मात्रा",
+            month: "बुवाई का महीना",
+            last_price: "पिछला बाजार मूल्य",
+            demand_index: "मांग सूचकांक"
+        },
+        results: {
+            optimal: "अनुकूल (बेहतर)",
+            highRisk: "उच्च जोखिम",
+            stabilityScore: "स्थिरता स्कोर",
+            basedOnParams: "इनपुट के आधार पर",
+            previous: "पिछला",
+            predicted: "अनुमानित"
+        },
+        error: {
+            backend: "सर्वर से संपर्क नहीं हो पा रहा है!"
+        }
+    }
+};
