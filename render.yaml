@@ -12,12 +12,12 @@ services:
       - key: PYTHON_VERSION
         value: 3.10.0
 
-  # 2. Frontend Service (React Static Site)
-  - type: static
+  # 2. Frontend Service (React via Node/Serve)
+  - type: web
     name: agro-frontend
-    env: static
+    env: node
     buildCommand: cd agro-frontend && npm install && npm run build
-    staticPublishPath: agro-frontend/build
+    startCommand: cd agro-frontend && npx serve -s build -l $PORT
     envVars:
       - key: REACT_APP_API_URL
         fromService:
