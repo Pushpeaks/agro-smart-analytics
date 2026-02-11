@@ -41,7 +41,11 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/report/generate`, {
+      const apiUrl = process.env.REACT_APP_API_URL.startsWith('http')
+        ? process.env.REACT_APP_API_URL
+        : `https://${process.env.REACT_APP_API_URL}`;
+
+      const response = await fetch(`${apiUrl}/report/generate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
