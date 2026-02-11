@@ -1,0 +1,26 @@
+services:
+  # 1. Backend Service (Python/FastAPI)
+  - type: web
+    name: agro-backend
+    env: python
+    region: singapore # Optional: Choose a region close to you
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: POETRY_VERSION
+        value: 1.8.2
+      - key: PYTHON_VERSION
+        value: 3.10.0
+
+  # 2. Frontend Service (React Static Site)
+  - type: static
+    name: agro-frontend
+    env: static
+    buildCommand: cd agro-frontend && npm install && npm run build
+    staticPublishPath: agro-frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          type: web
+          name: agro-backend
+          property: url
