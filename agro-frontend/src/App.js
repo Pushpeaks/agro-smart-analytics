@@ -41,9 +41,9 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const apiUrl = process.env.REACT_APP_API_URL.startsWith('http')
-        ? process.env.REACT_APP_API_URL
-        : `https://${process.env.REACT_APP_API_URL}`;
+      const apiUrl = process.env.NODE_ENV === 'production'
+        ? window.location.origin
+        : (process.env.REACT_APP_API_URL || 'http://localhost:8000');
 
       const response = await fetch(`${apiUrl}/report/generate`, {
         method: 'POST',
